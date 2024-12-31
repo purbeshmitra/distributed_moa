@@ -1,1 +1,1 @@
-# distributed_moa
+# Distributed Mixture-of-Agents
