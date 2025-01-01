@@ -4,7 +4,22 @@ Distributed Mixture-of-Agents (MoA) is an MoA architecture in a distributed sett
 
 🔗 Paper link: [Distributed Mixture-of-Agents for Edge Inference with Large Language Models](https://arxiv.org/abs/2412.21200)
 
-In the considered setup, different users have their own LLM models to address user prompts. Additionally, the devices gossip either their own user-specific prompts or augmented prompts to generate more refined answers to certain queries. User prompts are temporarily stored in the device queues when their corresponding LLMs are busy. Given the memory limitations of edge devices, it is crucial to ensure that the average queue sizes in the system remain bounded. In this paper, we address this by theoretically calculating the queuing stability conditions for the device queues under reasonable assumptions, which we validate experimentally as well. Further, we demonstrate through experiments, leveraging open-source LLMs for the implementation of distributed MoA, that certain MoA configurations produce higher-quality responses compared to others, as evaluated on AlpacaEval 2.0 benchmark.
+<p align="center">
+  <img src="assets/sample_DMoA_network.png" alt="Alt Text" width="750">
+</p>
+
+In the considered setup, different users have their own LLM models to address user prompts. Additionally, the devices gossip either their own user-specific prompts or augmented prompts to generate more refined answers to certain queries. User prompts are temporarily stored in the device queues when their corresponding LLMs are busy. 
+
+<p align="center">
+  <img src="assets/DMoA_network_structure.png" alt="Alt Text" width="750">
+</p>
+
+Given the memory limitations of edge devices, to ensure that the average queue sizes in the system remain bounded, the pormpt arrival rate at the users is bounded by some theoritical limit. The limit also depends on the number of layeys in the MoA, and the number of proposer LLMs in each layer. The MoA setting is shown below:
+
+<p align="center">
+  <img src="assets/MoA_model.png" alt="Alt Text" width="750">
+</p>
+
 
 
 ## Citation
