@@ -28,7 +28,7 @@ If you find our work useful, consider citing it as:
 @article{
     mitra2024distributed,
     title={Distributed Mixture-of-Agents for Edge Inference with Large Language Models},
-    author={Purbesh Mitra and Priyanka Kaswan and Sennur Ulukus},
+    author={Mitra, Purbesh and Kaswan, Priyanka and Ulukus, Sennur},
     journal={arXiv preprint arXiv:2412.21200},
     year={2024}
 }
