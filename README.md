@@ -30,6 +30,6 @@ If you find our work useful, consider citing it as:
     title={Distributed Mixture-of-Agents for Edge Inference with Large Language Models},
     author={Purbesh Mitra and Priyanka Kaswan and Sennur Ulukus},
     journal={arXiv preprint arXiv:2412.21200},
-    year={2024},
+    year={2024}
 }
 ```
