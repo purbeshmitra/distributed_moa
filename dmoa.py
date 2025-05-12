@@ -14,7 +14,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 n=4 # number of LLMs in the MoA network
 M=2 # number of layers (0 layer means no MoA)
 k=2 # number of additional proposer LLMs (minimum 1; maximum n-1)
-N=10 # number of prompts to be evaluated from the dataset
+N=10 # number of prompts to be evaluated from the evaluation dataset, depending on the compute available
 
 print(f"\nmoa_multi_prop: n={n}, M={M}, k={k}, N={N}")
 
